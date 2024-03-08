@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/* Core styles */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  .button {
+    border: none;
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.87rem;
+    padding: 1.26rem 2.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-size: 200% auto;
+  }
+  
+  .button:hover {
+    background-position: right center;
+  }
+  
+  .section-subtitle {
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 0.625rem;
+    color: #797979;
+    text-transform: uppercase;
+  }
+  
+  .section-title {
+    font-family: "Roboto", sans-serif ;
+    margin-top: 0.32rem;
+    font-size: 2.62rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #05364d;
+  }
+  
+  .blur-line {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    margin-left: 0.32rem;
+    width: 80px;
+    height: 4px;
+    background-color: rgba(237, 35, 159, 0.6);
+    filter: blur(4px);
+    border-radius: 4px;
+  }
+  
+  /* Main header styles */
+  
+  .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background:#fff;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    z-index: 10;
+  }
+
+  
+  .main-header__brand img {
+    width: 118px;
+  }
+  
+  .main-header__brand {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .main-navigation {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .main-navigation__items {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 140px;
+    padding-left: 0;
+  }
+  
+  .main-navigation__item {
+    display: inline-block;
+    margin-right: 40px;
+  }
+  
+  .main-navigation__item a {
+    color: #05364d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .main-navigation__item a:hover {
+    color: #efb6df;
+  }
+  
+  .main-navigation__item.active a {
+    color: #efb6df;
+  }
+
+  /* Footer section styles */
+
+.footer {
+  padding: 120px 0;
+  background-color: #021017;
+  text-align: center;
+  position: relative;
+}
+
+.footer__navigation {
+  display: inline-block ;
+  padding: 0 10px;
+}
+
+.footer__navigation-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+.footer__navigation-item a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.footer__navigation-item a:hover {
+   color: #a932c7;
+}
+
+.footer .footer__socials {
+  text-align: center;
+  margin: 5px 0 30px;
+}
+
+.footer .footer__social {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 36px;
+  color: #05364d;
+  font-size: 16px;
+  margin-right: 12px;
+  transition: all 0.4s ease 0s;
+}
+
+.footer__social a {
+  color: #021017 ;
+}
+
+.footer__social:hover {
+  background:linear-gradient(90deg,#1345e6 0%,#ed239f 100%);
+}
+
+.footer__social:hover i {
+  color: #fff;
+}
+
+
+.footer_text {
+  color: #797979
+}
+
+.footer_text a {
+  color: #a932c7;
+  text-decoration: none;
+}
+
+  /* /Footer section styles */
+
+  /* ***Responsive Design Styles*** */
+
+
+  @media only screen and (max-width:767px) {
+    .container {
+      width: 80%;
+      padding: 0 15px;
+    }
+    .main-navigation {
+      display: none;
+    }
+
+    .section-title {
+      font-size: 30px;
+      line-height: 34px;
+    }
+
+    /* Footer styles */
+
+    .footer {
+      padding: 80px 0;
+    }
+
+  .footer__navigation {
+    display: none;
+  }
+
+  .footer .footer__socials {
+    margin: 24px 0 30px;
+    padding: 0;
+  }
+
+  .footer_text {
+    font-size: 14px;
+  }
+  
+  }
+
+
+  /* @media only screen and (min-width: 576px){
+    .container {
+      max-width: 540px;
+    }
+  } */
+
+  
